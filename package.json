@@ -1,0 +1,24 @@
+{
+  "name": "test-adserver-example",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "player": "parcel -p 1234 player/index.html --no-cache",
+    "test:install": "playwright install --with-deps",
+    "test": "playwright test"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@osaas/client-core": "^0.3.0",
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.12",
+    "buffer": "^6.0.3",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@eyevinn/web-player-core": "^0.15.3"
+  }
+}

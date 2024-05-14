@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Web Player Example</title>
+  <style>
+    #mainContainer {
+      position: relative;
+      width: 640px;
+      height: 360px;
+    }
+
+    #player, #adContainer {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 640px;
+      height: 360px;
+    }
+
+    #contentElement {
+      width: 640px;
+      height: 360px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="mainContainer">
+    <div id="player"></div>
+    <div id="adContainer"></div>
+  </div>
+  <input
+    type="text"
+    name="manifest-url"
+    id="manifest-input"
+    value="https://maitv-vod.lab.eyevinn.technology/VINN.mp4/master.m3u8"
+    placeholder="Paste a Stream URI here..."
+  />
+  <input
+    type="text"
+    name="adtag-url"
+    id="adtag-input"
+    value="https://demo-website.eyevinn-test-adserver.auto.prod.osaas.io/api/v1/vast?dur=30"
+    placeholder="Paste an ad tag URI here..."
+  />
+  <button id="load-button">LOAD</button>
+  <button id="play-button" disabled>PLAY</button>
+  <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
