@@ -17,5 +17,5 @@ teardown('remove test adserver', async ({}) => {
     );
   } catch (err) {
     console.error('Failed to remove Test Adserver:', err);
-  }  
+  }
 });

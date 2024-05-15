@@ -1,7 +1,7 @@
 import { test as setup } from '@playwright/test';
 import { Context, createInstance } from '@osaas/client-core';
 
-const delay = ms => new Promise(res => setTimeout(res, ms));
+const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 setup('create a test-adserver', async ({}) => {
   console.log('Creating Test Adserver in Open Source Cloud...');
@@ -14,10 +14,10 @@ setup('create a test-adserver', async ({}) => {
     const instance = await createInstance(
       ctx,
       'eyevinn-test-adserver',
-      serviceAccessToken, 
+      serviceAccessToken,
       {
         name: 'webplayer'
-      },
+      }
     );
     await delay(6000);
     process.env.ADSERVER_URL = instance.url;
