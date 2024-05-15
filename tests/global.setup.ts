@@ -78,6 +78,8 @@ async function createAdConfiguration(sourceUrl: URL, adServerUrl: URL) {
     };
     const command = new PutPlaybackConfigurationCommand(input);
     const response = await client.send(command);
+    await delay(6000);
+    process.env.SSAI_LIVE_URL = response.HlsConfiguration?.ManifestEndpointPrefix + '/master.m3u8';
   } catch (err) {
     console.error('Failed to create Ad Configuration:', err);
   }
