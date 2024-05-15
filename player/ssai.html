@@ -28,28 +28,16 @@
     </style>
   </head>
   <body>
-    <a href="ssai.html">SSAI Player</a>
     <div id="mainContainer">
       <div id="player"></div>
-      <div id="adContainer"></div>
     </div>
     <input
       type="text"
       name="manifest-url"
       id="manifest-input"
-      value="https://maitv-vod.lab.eyevinn.technology/VINN.mp4/master.m3u8"
       placeholder="Paste a Stream URI here..."
     />
-    <input
-      type="text"
-      name="adtag-url"
-      id="adtag-input"
-      value="https://demo-website.eyevinn-test-adserver.auto.prod.osaas.io/api/v1/vast?dur=30"
-      placeholder="Paste an ad tag URI here..."
-    />
     <button id="load-button">LOAD</button>
-    <button id="play-button" disabled>PLAY</button>
-    <script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./ssai.js"></script>
   </body>
 </html>

@@ -11,6 +11,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@aws-sdk/client-mediatailor": "^3.576.0",
     "@osaas/client-core": "^0.3.0",
     "@playwright/test": "^1.44.0",
     "@types/node": "^20.12.12",
